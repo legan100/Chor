@@ -1,0 +1,16 @@
+a
+{
+    text-decoration: none;
+    border: solid transparent 1px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60px;
+    background-color: yellow;
+}
+
+a:hover
+{
+    color: white;
+    border: solid transparent 1px;
+    background-color: blue;
+}
