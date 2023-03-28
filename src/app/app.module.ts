@@ -7,6 +7,13 @@ import { NavComponent } from './nav/nav.component';
 import { ImprintComponent } from './Webseiten/imprint/imprint.component';
 import { TermineComponent } from './termine/termine.component';
 import { StartseiteComponent } from './startseite/startseite.component';
+import { Router, RouterModule, Routes } from '@angular/router';
+
+const appRoute:Routes = [
+{path: 'Termine', component: TermineComponent},
+{path: 'Ueber', component: AboutUsComponent},
+{path: 'Impressum', component:ImprintComponent},
+]
 
 @NgModule({
   declarations: [
@@ -18,7 +25,8 @@ import { StartseiteComponent } from './startseite/startseite.component';
     StartseiteComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
