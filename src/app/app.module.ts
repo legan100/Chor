@@ -6,6 +6,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { NavComponent } from './nav/nav.component';
 import { ImprintComponent } from './Webseiten/imprint/imprint.component';
 import { TermineComponent } from './termine/termine.component';
+import { StartseiteComponent } from './startseite/startseite.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TermineComponent } from './termine/termine.component';
     AboutUsComponent,
     NavComponent,
     ImprintComponent,
-    TermineComponent
+    TermineComponent,
+    StartseiteComponent
   ],
   imports: [
     BrowserModule
