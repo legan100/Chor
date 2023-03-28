@@ -4,4 +4,4 @@ npm install: aktualisiert node.js Pakete
 
 https://www.youtube.com/watch?v=UwTMjTt8jME
 
-shortcut: (ng generate component Komponentenname)
+shortcut: ng generate component Komponentenname
