@@ -96,4 +96,15 @@ a:hover
 {
   width: 100px;
   height: auto;
+  margin-top: 10px;
+}
+
+#herunterladen_plus_plakat
+{
+  margin-left: 100px;
+}
+
+#Abschluss
+{
+  margin-top: 20px;
 }
