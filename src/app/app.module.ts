@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { NavComponent } from './nav/nav.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
-    NavComponent
+    NavComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule
