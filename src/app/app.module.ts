@@ -8,6 +8,7 @@ import { ImprintComponent } from './Webseiten/imprint/imprint.component';
 import { TermineComponent } from './termine/termine.component';
 import { StartseiteComponent } from './startseite/startseite.component';
 import { Router, RouterModule, Routes } from '@angular/router';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const appRoute:Routes = [
 {path: 'Termine', component: TermineComponent},
@@ -28,7 +29,7 @@ const appRoute:Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoute)
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
