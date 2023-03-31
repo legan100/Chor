@@ -10,11 +10,11 @@ import { StartseiteComponent } from './startseite/startseite.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
-const appRoute:Routes = [
+/*const appRoute:Routes = [
 {path: 'Termine', component: TermineComponent},
 {path: 'Ueber', component: AboutUsComponent},
 {path: 'Impressum', component:ImprintComponent},
-]
+]*/
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ const appRoute:Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoute)
+    //RouterModule.forRoot(appRoute)
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
