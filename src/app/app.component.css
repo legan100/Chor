@@ -48,15 +48,6 @@
     margin: 0 16px;
   }
 
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 600px;
-    flex-direction: column;
-    align-items: center;
-  }
-
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
     svg#rocket-smoke {
@@ -91,3 +82,6 @@ a:hover
     background-color: black;
     
 }
+
+
+
