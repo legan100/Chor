@@ -1,35 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { NavComponent } from './nav/nav.component';
+import { AboutUsComponent } from './Webseiten/about-us/about-us.component';
 import { ImprintComponent } from './Webseiten/imprint/imprint.component';
-import { TermineComponent } from './termine/termine.component';
+import { TermineComponent } from './Webseiten/termine/termine.component';
 import { StartseiteComponent } from './startseite/startseite.component';
-import { Router, RouterModule, Routes } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-
-const appRoute:Routes = [
-{path: 'https://kunde.syster42.com/Termine', component: TermineComponent},
-{path: 'https://kunde.syster42.com/Ueber', component: AboutUsComponent},
-{path: 'https://kunde.syster42.com/Impressum', component:ImprintComponent},
-]
+import { MenuAppComponent } from './menu-app/menu-app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
-    NavComponent,
     ImprintComponent,
     TermineComponent,
-    StartseiteComponent
+    StartseiteComponent,
+    MenuAppComponent
   ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoute)
+    BrowserModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
