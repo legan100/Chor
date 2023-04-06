@@ -5,8 +5,9 @@ import { AboutUsComponent } from './Webseiten/about-us/about-us.component';
 import { ImprintComponent } from './Webseiten/imprint/imprint.component';
 import { TermineComponent } from './Webseiten/termine/termine.component';
 import { StartseiteComponent } from './startseite/startseite.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { MenuAppComponent } from './menu-app/menu-app.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
