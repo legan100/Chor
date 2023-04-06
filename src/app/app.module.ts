@@ -24,4 +24,5 @@ import { MenuAppComponent } from './menu-app/menu-app.component';
   bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule { } 
+//Zum Kopieren in Marcels Branch
