@@ -7,7 +7,13 @@ import { TermineComponent } from './Webseiten/termine/termine.component';
 import { StartseiteComponent } from './startseite/startseite.component';
 import { MenuAppComponent } from './menu-app/menu-app.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { Router, RouterModule, Routes } from '@angular/router';
 
+const appRoute:Routes = [
+  {path: 'Termine', component: TermineComponent},
+  {path: '', component: AboutUsComponent},
+  {path: 'Impressum', component:ImprintComponent},
+  ]
 
 @NgModule({
   declarations: [
@@ -19,11 +25,14 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MenuAppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoute)
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 
 export class AppModule { } 
-//Zum Kopieren in Marcels Branch
+
+
+
