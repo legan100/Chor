@@ -10,9 +10,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { Router, RouterModule, Routes } from '@angular/router';
 
 const appRoute:Routes = [
-  {path: 'Termine', component: TermineComponent},
+  {path: 'termine', component: TermineComponent},
   {path: '', component: AboutUsComponent},
-  {path: 'Impressum', component:ImprintComponent},
+  {path: 'impressum', component:ImprintComponent},
   ]
 
 @NgModule({
