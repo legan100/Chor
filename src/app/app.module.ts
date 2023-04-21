@@ -13,6 +13,7 @@ const appRoute:Routes = [
   {path: 'termine', component: TermineComponent},
   {path: '', component: AboutUsComponent},
   {path: 'impressum', component:ImprintComponent},
+  {path: '**', redirectTo: '/termine' }
   ]
 
 @NgModule({
