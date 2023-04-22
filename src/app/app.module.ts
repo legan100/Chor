@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+
 import { AboutUsComponent } from './Webseiten/about-us/about-us.component';
 import { ImprintComponent } from './Webseiten/imprint/imprint.component';
 import { TermineComponent } from './Webseiten/termine/termine.component';
@@ -20,14 +21,21 @@ const appRoute:Routes = [
   {path: '**', redirectTo: '/termine' }
   ]
 
+import { HomeComponent } from './home/home.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
+
     AboutUsComponent,
     ImprintComponent,
     TermineComponent,
     StartseiteComponent,
     MenuAppComponent
+
+    HomeComponent
+
   ],
   imports: [
     BrowserModule,
