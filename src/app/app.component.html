@@ -1,3 +1,4 @@
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -146,9 +147,16 @@
   }
 </style>
 
+
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
+
+    width="70"
+    alt="Akkordeonorchester Ansbach e.V."
+    src="../assets/AOA Logo.png"
+  />
+    <div class="spacer">
     width="40"
     alt="Akkordeonorchester Logo"
     src="Placeholder"
@@ -194,12 +202,11 @@
       
   </footer>
 
+      <a routerLink="">Über uns</a>
+      <a routerLink="/termine">Termine</a>
+      <a routerLink="/impressum">Impressum</a>
+      <a routerLink="/menu-body">MatMenu</a>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
+    </div>
+    <router-outlet></router-outlet>
+</div>
