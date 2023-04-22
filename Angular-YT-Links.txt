@@ -1,0 +1,13 @@
+Debug: ng serve
+
+npm install: aktualisiert node.js Pakete
+
+https://www.youtube.com/watch?v=UwTMjTt8jME
+
+shortcut: ng generate component Komponentenname
+
+Tutorialreihe
+https://www.youtube.com/watch?v=XvemczQn56U&list=PLNmsVeXQZj7pY65LXhI1_bIcOByRhP9Xb&index=1
+
+create Multilevel dropdown menu
+https://www.youtube.com/watch?v=u9BhYFQYR-g
