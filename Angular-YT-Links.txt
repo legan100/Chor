@@ -1,6 +1,7 @@
 Debug: ng serve
 
 npm install: aktualisiert node.js Pakete
+ng add @angular/material
 
 https://www.youtube.com/watch?v=UwTMjTt8jME
 
