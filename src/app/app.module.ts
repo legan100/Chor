@@ -41,6 +41,3 @@ const appRoute:Routes = [
 })
 
 export class AppModule { } 
-
-
-
