@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MenuAppComponent } from './menu-body/menu-app.component';
+import { MenuAppComponent } from './toolbar-elements/toolbar-about-us/menu-app.component';
 
 const routes: Routes = [
 {path: "app-menu-body", component:MenuAppComponent},
