@@ -31,7 +31,7 @@
     flex: 1;
   }
 
-  .toolbar {
+ /* .toolbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,7 +42,7 @@
     background-color: white;
     color: black;
     font-weight: 600;
-  }
+  }*/
 
   .toolbar img {
     margin: 0 16px;
