@@ -5,18 +5,20 @@ import { AboutUsComponent } from './Webseiten/about-us/about-us.component';
 import { ImprintComponent } from './Webseiten/imprint/imprint.component';
 import { TermineComponent } from './Webseiten/termine/termine.component';
 import { StartseiteComponent } from './startseite/startseite.component';
-import { MenuAppComponent } from './menu-body/menu-app.component';
+import { MenuAppComponent } from './toolbar-elements/toolbar-about-us/menu-app.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { ToolbarTermineComponent } from './toolbar-elements/toolbar-termine/toolbar-termine.component';
 
 const appRoute:Routes = [
-  {path: 'termine', component: TermineComponent},
-  {path: '', component: AboutUsComponent},
   {path: 'impressum', component:ImprintComponent},
-  {path: 'menu-body', component:MenuAppComponent},
+  {path: 'toolbar-about-us', component:MenuAppComponent},
+  {path: 'toolbar-termine', component:MenuAppComponent},
+  {path: '', component:MenuAppComponent},
+  //{path: 'toolbar-about-us', component:MenuAppComponent}
   {path: '**', redirectTo: '/termine' }
   ]
 
@@ -27,7 +29,8 @@ const appRoute:Routes = [
     ImprintComponent,
     TermineComponent,
     StartseiteComponent,
-    MenuAppComponent
+    MenuAppComponent,
+    ToolbarTermineComponent
   ],
   imports: [
     BrowserModule,
@@ -40,4 +43,8 @@ const appRoute:Routes = [
   bootstrap: [AppComponent]
 })
 
+
+export class AppModule { }  
+
 export class AppModule { } 
+
