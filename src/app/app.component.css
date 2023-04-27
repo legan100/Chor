@@ -70,18 +70,8 @@ a
     border-radius: 20px;
     padding: 10px;
     width: 60px;
-    background-color: white;
     color: black;
     margin: 3px;
 }
-
-a:hover
-{
-    color: white;
-    border: solid transparent 1px;
-    background-color: black;
-    
-}
-
 
 
