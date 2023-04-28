@@ -18,7 +18,7 @@ const appRoute:Routes = [
   {path: 'termine', component:TermineComponent},
   {path: '', component:StartseiteComponent},
   //{path: 'toolbar-about-us', component:MenuAppComponent}
-  {path: '**', redirectTo: '/termine' }
+ // {path: '**', redirectTo: '/termine' }
   ]
 
 @NgModule({
