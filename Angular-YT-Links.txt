@@ -12,3 +12,6 @@ https://www.youtube.com/watch?v=XvemczQn56U&list=PLNmsVeXQZj7pY65LXhI1_bIcOByRhP
 
 Create Responsive Nested Dropdown Navigation Bar in Angular
 https://www.youtube.com/watch?v=68l78pI5wLQ
+
+Angular Deploy
+Command: ng build

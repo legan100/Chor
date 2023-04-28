@@ -1,17 +1,16 @@
-.content-all{
+.content-all {
   text-align: left;
 }
 
 .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 600px;
-    flex-direction: column;
-   
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 600px;
+  flex-direction: column;
 }
 
-table{
+table {
   display: flex;
   margin: 82px auto 32px;
   padding: 0 16px;
@@ -20,10 +19,10 @@ table{
   align-items: left;
 }
 
-.headline1{
+.headline1 {
   margin-bottom: 20px;
 }
 
-.Hinweise{
+.Hinweise {
   font-weight: 500;
 }

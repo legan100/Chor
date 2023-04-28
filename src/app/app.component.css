@@ -1,16 +1,13 @@
-
-
-.navbar-nav li:hover>ul.dropdown-menu{
+.navbar-nav li:hover>ul.dropdown-menu {
   display: block;
 }
 
-.dropdown-submenu{
+.dropdown-submenu {
   position: relative;
 }
 
-.dropdown-submenu>.dropdown-meni{
+.dropdown-submenu>.dropdown-meni {
   top: 0;
   margin-top: -5px;
   left: 100%;
 }
-
