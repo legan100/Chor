@@ -1,29 +1,26 @@
 .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 600px;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
+}
 
-#download_pdf
-{
+#download_pdf {
   width: 100px;
   height: auto;
   margin-top: 10px;
 }
 
-#herunterladen_plus_plakat
-{
-  margin-left: 100px;
-}
-
-#Abschluss
-{
+#Abschluss {
   margin-top: 20px;
 }
-img{
-    background-image: url(../../assets/20221105_161232.jpg);
 
+img {
+  background-image: url(../../assets/20221105_161232.jpg);
+}
+
+.Hinweise {
+  font-weight: 500;
 }
