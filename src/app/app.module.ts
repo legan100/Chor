@@ -5,22 +5,20 @@ import { AboutUsComponent } from './Webseiten/about-us/about-us.component';
 import { ImprintComponent } from './Webseiten/imprint/imprint.component';
 import { TermineComponent } from './Webseiten/termine/termine.component';
 import { StartseiteComponent } from './startseite/startseite.component';
-import { MenuAppComponent } from './toolbar-elements/toolbar-about-us/menu-app.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
-import {MatButtonModule} from '@angular/material/button';
-import { ToolbarTermineComponent } from './toolbar-elements/toolbar-termine/toolbar-termine.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
-const appRoute:Routes = [
-  {path: 'impressum', component:ImprintComponent},
-  {path: 'toolbar-about-us', component:MenuAppComponent},
-  {path: 'toolbar-termine', component:MenuAppComponent},
-  {path: '', component:MenuAppComponent},
-  //{path: 'toolbar-about-us', component:MenuAppComponent}
-  {path: '**', redirectTo: '/termine' }
-  ]
+const appRoute: Routes = [
+  { path: 'impressum', component: ImprintComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'termine', component: TermineComponent },
+  { path: 'startseite', component: StartseiteComponent },
+  { path: '**', redirectTo: '/startseite' }
+]
 
 @NgModule({
   declarations: [
@@ -28,19 +26,20 @@ const appRoute:Routes = [
     AboutUsComponent,
     ImprintComponent,
     TermineComponent,
-    StartseiteComponent,
-    MenuAppComponent,
-    ToolbarTermineComponent
+    StartseiteComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoute),
     BrowserAnimationsModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSlideToggleModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 
+
 export class AppModule { }  
+
